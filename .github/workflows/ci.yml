@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdown-and-structure:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Required files exist
+        run: |
+          test -f README.md
+          test -f AGENTS.md
+          test -f docs/style-guide.md
+          test -f docs/architecture.md
+          test -f docs/git-workflow.md
+          test -f configs/prettier/.prettierrc.json
+          test -f configs/eslint/eslint.config.base.mjs
+          test -f pocket-protector/manifesto.md
+      - name: No secrets patterns in tree
+        run: |
+          if grep -RInE '(AWS_SECRET_ACCESS_KEY|BEGIN RSA PRIVATE KEY|ghp_[A-Za-z0-9]{20,})' \
+            --exclude-dir=.git . ; then
+            echo "Possible secret found" >&2
+            exit 1
+          fi
+          echo "OK"

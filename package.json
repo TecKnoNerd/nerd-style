@@ -1,0 +1,28 @@
+{
+  "name": "@tecknonerd/nerd-style",
+  "version": "1.0.0",
+  "private": false,
+  "description": "TecKnoNerd shared style guides, architecture rules, and configs (pocket-protector edition)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TecKnoNerd/nerd-style.git"
+  },
+  "files": [
+    "AGENTS.md",
+    "docs/**",
+    "configs/**",
+    "templates/**",
+    "pocket-protector/**",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "style-guide",
+    "architecture",
+    "eslint",
+    "prettier",
+    "tecknonerd",
+    "agents"
+  ]
+}

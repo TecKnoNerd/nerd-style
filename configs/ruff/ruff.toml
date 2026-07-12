@@ -1,0 +1,14 @@
+# Shared Ruff defaults for TecKnoNerd Python packages
+target-version = "py312"
+line-length = 100
+
+[lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = []
+
+[lint.isort]
+known-first-party = []
+
+[format]
+quote-style = "double"
+indent-style = "space"
