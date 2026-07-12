@@ -43,6 +43,16 @@ Merge `configs/typescript/tsconfig.base.json` via:
 Copy-Item configs/ruff/ruff.toml <host>/python/
 ```
 
+## UI tokens
+
+CSS variables derived from Sign Vault portal styling:
+
+```css
+@import "./.nerd-style/configs/ui/tokens.css";
+```
+
+See [`configs/ui/README.md`](./ui/README.md), [`docs/ui-style-guide.md`](../docs/ui-style-guide.md), and [`docs/ui-patterns.md`](../docs/ui-patterns.md).
+
 ## Package scripts (suggested)
 
 See root `README.md` and `templates/package.scripts.json`.

@@ -8,8 +8,9 @@ How coding agents should work on TecKnoNerd repos that adopt **nerd-style**.
 
 1. Read host `AGENTS.md`, constitution, and relevant SPECs.
 2. Read this repo’s `AGENTS.md` + relevant `docs/*` when host defers.
-3. Inspect git status / branch before editing.
-4. Prefer small, reversible local changes; ask before destructive or shared-remote actions.
+3. For UI work: `docs/ui-style-guide.md` + `docs/ui-patterns.md` (Sign Vault is the reference look).
+4. Inspect git status / branch before editing.
+5. Prefer small, reversible local changes; ask before destructive or shared-remote actions.
 
 ---
 

@@ -71,6 +71,9 @@ Config seed: `configs/ruff/ruff.toml`.
 - No secrets in `NEXT_PUBLIC_*` beyond non-sensitive public IDs.
 - Portal vs marketing: separate URL paths or products; one CloudFront is fine for cost.
 
+**Visual system:** follow [`ui-style-guide.md`](./ui-style-guide.md) and [`ui-patterns.md`](./ui-patterns.md)  
+(reference product: [sign-vault](https://github.com/TecKnoNerd/sign-vault)). Token seed: `configs/ui/tokens.css`.
+
 ---
 
 ## Markdown

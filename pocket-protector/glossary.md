@@ -10,3 +10,5 @@
 | **Pre-push gate** | Format + lint before every push |
 | **Opaque token** | Random secret id (guest/signing), not a JWT |
 | **Soft delete** | Mark deleted/inactive; retain row for recovery/audit |
+| **UI tokens** | CSS variables for brand/surface/status (`configs/ui/tokens.css`) |
+| **Portal shell** | Authenticated topbar + sidebar + main layout pattern |

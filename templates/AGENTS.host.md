@@ -6,7 +6,8 @@ Product-specific agent rules. Shared culture: [nerd-style](https://github.com/Te
 ## Shared (nerd-style)
 
 1. Follow `.nerd-style/AGENTS.md` and `.nerd-style/docs/*` when this file is silent.
-2. **Last step before every push:**
+2. UI: follow `.nerd-style/docs/ui-style-guide.md` and `ui-patterns.md` (Sign Vault look).
+3. **Last step before every push:**
 
    ```powershell
    pnpm format

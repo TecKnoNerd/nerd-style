@@ -1,0 +1,66 @@
+/**
+ * TecKnoNerd UI design tokens (Sign Vault–derived).
+ *
+ * Usage in host frontend:
+ *   @import "./.nerd-style/configs/ui/tokens.css";
+ *   /* or copy into globals.css and extend */
+ *
+ * Docs: docs/ui-style-guide.md, docs/ui-patterns.md
+ */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
+
+:root {
+  color-scheme: light;
+
+  /* Brand */
+  --primary: #4f46e5;
+  --primary-hover: #4338ca;
+  --primary-soft: #f1e7ff;
+  --primary-soft-2: #eef2ff;
+  --cyan: #22d3ee;
+  --cyan-deep: #0891b2;
+
+  /* Surfaces */
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* Semantic */
+  --ok: #059669;
+  --ok-bg: #d1fae5;
+  --warn: #d97706;
+  --warn-bg: #fef3c7;
+  --danger: #e11d48;
+  --danger-bg: #ffe4e6;
+  --info: #2563eb;
+  --info-bg: #dbeafe;
+
+  /* Elevation & shape */
+  --shadow: 0 10px 15px -3px rgb(15 23 42 / 0.08), 0 4px 6px -4px rgb(15 23 42 / 0.08);
+  --radius: 1rem;
+  --radius-lg: 1.5rem;
+  --sidebar-w: 15rem;
+  --topbar-h: 4rem;
+
+  font-family: Inter, system-ui, -apple-system, sans-serif;
+}
+
+/* Optional helpers — hosts may omit and keep only :root tokens */
+
+.font-display {
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.brand-mark-gradient {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 55%, #22d3ee 100%);
+}
+
+.progress-gradient {
+  background: linear-gradient(90deg, var(--primary), var(--cyan));
+}

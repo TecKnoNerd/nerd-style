@@ -14,6 +14,8 @@ This repository is the **single source of shareable engineering culture** used a
 | Path | Purpose |
 | ---- | ------- |
 | [`docs/style-guide.md`](./docs/style-guide.md) | Language, naming, formatting, prose |
+| [`docs/ui-style-guide.md`](./docs/ui-style-guide.md) | UI tokens, type, color, components (Sign Vault–derived) |
+| [`docs/ui-patterns.md`](./docs/ui-patterns.md) | Portal shells, wizards, lists, empty states |
 | [`docs/architecture.md`](./docs/architecture.md) | System design rules (serverless, multi-tenant, cost) |
 | [`docs/api-design.md`](./docs/api-design.md) | HTTP/API contracts & error shapes |
 | [`docs/security.md`](./docs/security.md) | Auth, secrets, isolation, threat defaults |
@@ -22,7 +24,7 @@ This repository is the **single source of shareable engineering culture** used a
 | [`docs/naming.md`](./docs/naming.md) | Files, IDs, env vars, AWS resources |
 | [`docs/agent-playbook.md`](./docs/agent-playbook.md) | How coding agents must operate |
 | [`AGENTS.md`](./AGENTS.md) | Drop-in agent instructions (import into product repos) |
-| [`configs/`](./configs/) | Prettier, ESLint, EditorConfig, TS base, Ruff |
+| [`configs/`](./configs/) | Prettier, ESLint, EditorConfig, TS base, Ruff, UI tokens |
 | [`templates/`](./templates/) | Boilerplate for new repos |
 | [`pocket-protector/`](./pocket-protector/) | Manifesto, checklists, glossary |
 

@@ -11,6 +11,7 @@ Product-specific rules (SPECs, stack, cost deferrals) live in the **host repo**.
 1. **Read host `AGENTS.md` + constitution/SPECs first** (product wins on domain conflicts).
 2. **Apply nerd-style docs** when host is silent:
    - Style: `docs/style-guide.md`
+   - UI: `docs/ui-style-guide.md`, `docs/ui-patterns.md` (tokens seed: `configs/ui/`)
    - Architecture: `docs/architecture.md`
    - API: `docs/api-design.md`
    - Security: `docs/security.md`

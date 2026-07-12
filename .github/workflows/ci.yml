@@ -16,10 +16,13 @@ jobs:
           test -f README.md
           test -f AGENTS.md
           test -f docs/style-guide.md
+          test -f docs/ui-style-guide.md
+          test -f docs/ui-patterns.md
           test -f docs/architecture.md
           test -f docs/git-workflow.md
           test -f configs/prettier/.prettierrc.json
           test -f configs/eslint/eslint.config.base.mjs
+          test -f configs/ui/tokens.css
           test -f pocket-protector/manifesto.md
       - name: No secrets patterns in tree
         run: |
