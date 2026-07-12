@@ -23,8 +23,9 @@ jobs:
           test -f pocket-protector/manifesto.md
       - name: No secrets patterns in tree
         run: |
-          if grep -RInE '(AWS_SECRET_ACCESS_KEY|BEGIN RSA PRIVATE KEY|ghp_[A-Za-z0-9]{20,})' \
-            --exclude-dir=.git . ; then
+          # Split tokens so this workflow file does not self-match the scan.
+          pattern='(AWS_SECRET_ACCESS_''KEY|BEGIN RSA PRIVATE ''KEY|ghp_[A-Za-z0-9]{20,})'
+          if grep -RInE "$pattern" --exclude-dir=.git . ; then
             echo "Possible secret found" >&2
             exit 1
           fi
